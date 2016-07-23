@@ -18,6 +18,17 @@ $book1->setDescription("Harry Potter");
 $book1->setCost(20);
 $products[] = $book1;
 
+$Program = new Product_down();
+$Program->setDescription("Window 10");
+$Program->setCost(15);
+$products[] = $Program;
+
+$hotel = new Product_Rest();
+$hotel->setDescription("Five Stars hotel");
+$hotel->setCost(15);
+$products[] = $hotel;
+
+
 
 // load the product from array by id
 foreach ($products as $id => $product) {
